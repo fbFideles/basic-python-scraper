@@ -29,7 +29,5 @@ def main():
     df = pd.DataFrame(quotes, columns=['text', 'author', 'tags'])
     df.to_csv('quotes.csv', index=False)
 
-    df.to_json('quotes.json')
-
 if __name__ == "__main__":
     main()
